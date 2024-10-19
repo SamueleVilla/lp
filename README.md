@@ -1,4 +1,4 @@
-## Repository del corso di Linguaggi Di programmazione
+## Repository del corso di Linguaggi Di Programmazione
 
 In questa repo sono disponibili i sorgenti dei vari progetti affrontati nel
 corso.
