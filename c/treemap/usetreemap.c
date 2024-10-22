@@ -19,15 +19,25 @@ int main() {
   treemap_print(tm);
 
   printf("\n------------------------------\n");
-  printf("[1] => %s", treemap_get(tm, 1));
+  printf("[1] => %s", (char*) treemap_get(tm, 1));
   printf("\n");
-  printf("[5] => %s", treemap_get(tm, 5));
+  printf("[5] => %s", (char *) treemap_get(tm, 5));
   printf("\n------------------------------\n");
   
   printf("Removing Apple bc is shit company :)\n");
   tm = treemap_remove(tm, 10);
   treemap_print(tm);
 
-  
+  printf("\n------------------------------\n");
+  printf("Treemap is bst?: %d", treemap_is_bst(tm));
+  printf("\n------------------------------\n");
+  printf("Treemap I/O -- Load from file \n");
+
+  Treemap tm1 = treemap_new("Films");
+
+  treemap_load_file(tm1, "input.txt");
+
+  treemap_print(tm1);
+    
   return 0;
 }
