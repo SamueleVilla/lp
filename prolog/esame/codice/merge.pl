@@ -1,6 +1,7 @@
-%%% -*- Mode: Prolog -*-
+%%% -*. Mode: Prolog -*-
 %
-% cut.pl
+% merge/3
+% This predicate merge two ordered lists
 
 merge([], Ys, Ys) :- !.
 merge(Xs, [], Xs) :- !.
@@ -23,6 +24,4 @@ merge([X | Xs], [Y | Ys], [Y | Zs]) :-
 % minimum/3
 %
 minimum(X, Y, X) :- X =< Y, !.
-minimum(X, Y, Y) :- Y =< X, !.
-
-% cut.pl ends here.
+minimum(X, Y, Y) :- Y < X, !.

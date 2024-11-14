@@ -1,0 +1,7 @@
+%%% -*- Mode: Prolog -*-
+%
+%
+% double/2
+
+double([], []).
+
