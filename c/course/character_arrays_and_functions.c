@@ -54,6 +54,7 @@ int strend(char *s, char *t)
   return 1;
 }
 
+
 /* strncpy: copy t to s at most n char; poiner version 2 */
 void strncpy(char *s, char *t, int n)
 {
@@ -90,12 +91,6 @@ void strncat(char *s, char *t, int n)
 int main()
 {
 
-  char s[20];
-
-  printf("-- strcpy -- \n");
-  strcpy(s, "Hello, world");
-  printf("copied: %s\n", s);
-
   char s2[20];
   printf("-- strncpy -- \n");
   strncpy(s2, "Hello, World", 5);
@@ -116,7 +111,7 @@ int main()
   char t1[50] = " World";
   strcat(s1, t1);
   printf("concat: %s\n", s1);
-
+  
   printf("-- strncat -- \n");
   char s3[20] = "Hello";
   char *t3 = "World";
