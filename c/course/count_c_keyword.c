@@ -2,7 +2,6 @@
 #include <ctype.h>
 #include <string.h>
 
-
 #define MAXWORD 100
 #define NKEYS (sizeof(keytab) / sizeof(struct key))
 
@@ -91,9 +90,9 @@ int getword(char* buffer, int max) {
     int i = 0;
 
     // Skip any leading whitespace
-    while (isspace(c = getchar())) {
+    while (isspace(c = getchar()))
+      ;
         // Just keep reading until a non-whitespace character is found
-    }
     
     // If we've reached EOF, return EOF
     if (c == EOF) {
