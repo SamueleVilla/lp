@@ -1,3 +1,5 @@
 # emacs
 *.c~
 *.pl~
+*.jl~
+*.lisp~
